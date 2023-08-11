@@ -11100,16 +11100,7 @@ html {
   }
 }
 
-.image-button-text {
-  position: absolute;
-  font: "Lato";
-  top: 10%; /* Adjust the vertical position of the text */
-  left: 20%; /* Adjust the horizontal position of the text */
-  transform: translate(-50%, -50%); /* Center the text within the container */
-  font-size: 40px; /* Adjust the font size as needed */
-  color: #fff; /* Adjust the text color */
-  /* Add any additional styling for the text if needed */
-}
+
 
 .social-icon {
   color: white;
@@ -11121,7 +11112,7 @@ html {
 }
 
 .contact-icons {
-  padding:20px;
+  padding-top:30px;
 }
 
 .project-caption {
@@ -11130,7 +11121,33 @@ html {
 }
 
 .social-icon {
-  padding-left:10px;
+  padding-left:5px;
+  padding-right:5px;
+  float:center;
+}
+
+.copyright-footer {
+  padding-top:200px;
+}
+
+.portfolio-item {
+  position: relative;
+}
+.image-button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgb(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+  font-weight:700;
+  border-radius: 10px;
+}
+
+.modal-image-caption {
+  margin-top: 100px;
 }
 
 
