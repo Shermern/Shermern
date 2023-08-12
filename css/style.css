@@ -11141,10 +11141,23 @@ html {
   background-color:rgb(0, 0, 0, 0.7);
   color: white;
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight:700;
   border-radius: 10px;
 }
+
+.modal-github {
+  font-size:20px;
+  color:white;
+}
+
+.modal-text {
+  text-indent: 50px;
+  text-align:justify;
+  margin-bottom: 40px;
+}
+
+
 
 
 
