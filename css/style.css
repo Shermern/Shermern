@@ -11127,7 +11127,7 @@ html {
 }
 
 .copyright-footer {
-  padding-top:200px;
+  padding-top:10px;
 }
 
 .portfolio-item {
@@ -11163,6 +11163,14 @@ html {
 
 .stat-icon {
   margin-right:60px;
+}
+
+#statistics {
+  padding-top:10px;
+}
+
+.scroll-target {
+  scroll-margin-top: -100px;
 }
 
 
