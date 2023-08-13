@@ -58,7 +58,7 @@ function updateStatistics(scale) {
         { metricValue: 125, imperialValue: 276, unit: scale === 'imperial' ? ' lbs' : ' kg', exercise: 'Bench Press' },
         { metricValue: 140, imperialValue: 309, unit: scale === 'imperial' ? ' lbs' : ' kg', exercise: 'Squat' },
         { metricValue: 150, imperialValue: 331, unit: scale === 'imperial' ? ' lbs' : ' kg', exercise: 'Deadlift' },
-        { metricValue: 53.52, imperialValue: 33.25, unit: scale === 'imperial' ? ' miles' : ' km', exercise: 'Longest Continuous Run' }
+        { metricValue: 53.52, imperialValue: 33.25, unit: scale === 'imperial' ? ' mi' : ' km', exercise: 'Longest Continuous Run' }
     ];
 
     statistics.forEach((stat, index) => {
