@@ -11314,7 +11314,10 @@ main {
     bottom: 0;
     width: 100vw;
     height: 5rem;
-    background: var(--bg-primary)
+    background: var(--bg-primary);
+    overflow-y: hidden; /* Hide vertical scrolling */
+    white-space: nowrap; /* Prevent icons from wrapping to the next line */
+    justify-content: center;
   }
 
   .logo {
@@ -11327,6 +11330,10 @@ main {
 
   .nav-link {
     justify-content: center;
+  }
+
+  .fa-primary {
+    color: #ff7eee;
   }
 
   main {
