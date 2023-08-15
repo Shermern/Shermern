@@ -11322,6 +11322,10 @@ main {
     justify-content: center;
   }
 
+  .navbar:hover .fa-primary {
+    color: white;
+  }
+
   .logo {
     display: none;
   }
