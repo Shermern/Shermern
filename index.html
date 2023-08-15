@@ -34,16 +34,19 @@
   <!-- Header -->
   <section id="title" class="gradient-background">
     <div class="px-4 py-5 text-center header">
-      <img id="profile" src="./assets/img/profile.png">    
-      <h1 id="name" class="display-5 fw-bold ">Shermern Ang</h1>
+      <img id="profile" src="./assets/img/profile.png">   
+      <div>
+        <p class="mt-4 text-align-left hello-heading">Hello! I'm</p>
+        <h1 id="name" class="display-5 fw-bold "><span id="header-typejs"></span> </h1>
+        <span id="typed2"></span> 
+      </div>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Maker | Engineer</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a class="nav-link-button" href="#portfolio">Projects</a></button>
           <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a class="nav-link-button" href="#statistics">Stats</a></button>
           <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a class="nav-link-button" href="#about">About</a></button>
           <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a target=”_blank” class="nav-link-button" href="./assets/Resume 030823.pdf">Resume</a></button>
-        </div>
+        </div> -->
         
         <div class="contact-icons">
             <a href="" id="copyEmailButton" title="Copy Email"><i class="social-icon fas fa-envelope"></i></a>
@@ -234,8 +237,7 @@
         </div>
         <!-- About Section Content-->
         <div class="row">
-            <div class="col-lg-4 ms-auto"><p class="lead">I am a Computer Science undergrad at Carnegie Mellon University. I am originally from Singapore</p></div>
-            <div class="col-lg-4 me-auto"><p class="lead">My interests lie in making things. I love solving problems and finding creative ways to approach them.</p></div>
+            <div class="col-lg-12"><p class="lead text-justify">I am a Computer Science undergrad at Carnegie Mellon University, hailing from sunny Singapore! When I'm not nose-deep in code, you can find me in the gym, building things, watching movies. My newest obsession is building my own custom keyboard, right from printing the PCB. My next project hopefully would be to build my own cargo-bike, and learning how to weld in the process.</p></div>
         </div>
         <div class="contact-icons d-flex justify-content-center">
             <a href="" id="copyEmailButton" title="Copy Email"><i class="social-icon fas fa-envelope"></i></a>
@@ -700,7 +702,17 @@
       <script src="js/email.js"></script>
       <!-- Units script -->
       <script src="js/units.js"></script>
-     
+      <!-- Typejs -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+      <script>
+        var typed = new Typed('#header-typejs', {
+          strings: ["Shermern Ang"],
+          typeSpeed: 75
+        });
+      </script>
+
+      
       <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
       <!-- * *                               SB Forms JS                               * *-->
       <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
