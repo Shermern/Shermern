@@ -11234,15 +11234,15 @@ main {
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--text-primary);
+  color: white;
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
+  filter: grayscale(100%) opacity(0.9);
   transition: var(--transition-speed);
 }
 
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
+  background:  rgb(0,0,200);
   color: var(--text-secondary);
 }
 
@@ -11351,7 +11351,7 @@ main {
 
   .navbar:hover {
     width: 16rem;
-    background: rgba(35,35,46,0.9);
+    background: rgba(38,98,211,0.9);
   }
 
   .navbar:hover .link-text {
