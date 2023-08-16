@@ -30,31 +30,131 @@
 </head>
 
 <body>
-    <main>
+  <main>
   <!-- Header -->
-  <section id="title" class="gradient-background">
-    <div class="px-4 py-5 text-center header">
-      <img id="profile" src="./assets/img/profile.png">   
-      <div>
-        <p class="mt-4 text-align-left hello-heading">Hello! I'm</p>
-        <h1 id="name" class="display-5 fw-bold "><span id="header-typejs"></span> </h1>
-        <span id="typed2"></span> 
-      </div>
-      <div class="col-lg-6 mx-auto">
-        <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a class="nav-link-button" href="#portfolio">Projects</a></button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a class="nav-link-button" href="#statistics">Stats</a></button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a class="nav-link-button" href="#about">About</a></button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4 gap-3"><a target=”_blank” class="nav-link-button" href="./assets/Resume 030823.pdf">Resume</a></button>
-        </div> -->
-        
-        <div class="contact-icons">
-            <a href="" id="copyEmailButton" title="Copy Email"><i class="social-icon fas fa-envelope"></i></a>
-            <a href="https://github.com/Shermern" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="social-icon fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/shermern/" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="social-icon fab fa-linkedin"></i></a>
+  <section id="title" class="gradient-background" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div class="px-4 py-5 text-center align-items-center justify-content-center">
+      <img id="profile" src="./assets/img/profile.png">
+      <p class="mt-4 text-align-left hello-heading">Hello! I'm</p>
+      <h1 id="name" class="display-5 fw-bold"><span id="header-typejs"></span> </h1>
+      <span id="typed3"></span> 
+    </div>
+    <a href="#about">
+      <div class="scroll-down" style="margin: 0 auto;"></div>
+    </a>
+  </section>
+
+   <!-- About -->
+   <section class="page-section scroll-target" id="about">
+    <div class="container">
+        <!-- Statistic Section Heading-->
+        <h2 class="page-section-heading text-center text-secondary mb-0">About</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- About Section Content-->
+        <div class="row">
+          <div class="col-lg-12"><p class="lead">&emsp; I am a Computer Science undergrad at Carnegie Mellon University, hailing from sunny Singapore! When I'm not nose-deep in code, you can find me in the gym, building things, watching movies. My newest obsession is building my own custom keyboard, right from printing the PCB. My next project hopefully would be to build my own cargo-bike, and learning how to weld in the process.</p></div>
         </div>
     </div>
+
+      <button type="button" class="collapsible">Click here for some interesting statistics!</button>
+      <div class="content">
+        <!-- Stats -->
+        <section class="page-section portfolio" id="statistics">
+              <div class="container">
+                  <!-- Statistic Section Heading-->
+                  <h2 class="page-section-heading text-center text-secondary mb-0">Statistics</h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                      <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Statistics -->
+                  <div class="row grouped-multiple-statistics-card">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div id="stat-0" class="col-lg-6 col-xl-3 col-sm-6 col-12">
+                                  <div class="d-flex align-items-start mb-sm-1 mb-xl-0 border-right-blue-grey border-right-lighten-5 justify-content-between">
+                                      
+                                      <div class="stats-amount mr-3">
+                                        <h3 class="heading-text text-bold-600">125 kg</h3>
+                                        <p class="sub-heading">Bench Press</p>
+                                      </div>
+                                      <span class="card-icon primary d-flex">
+                                          <img class="stat-icon" src="./assets/img/statistics/Bench.png" width="100"/>
+                                      </span>
+                                      
+                                      <!-- <span class="inc-dec-percentage">
+                                        <small class="success"><i class="fa fa-long-arrow-up"></i> 5.2%</small>
+                                      </span> -->
+                                    </div>
+                              </div>
+                              <div id="stat-1" class="col-lg-6 col-xl-3 col-sm-6 col-12">
+                                <div class="d-flex align-items-start mb-sm-1 mb-xl-0 border-right-blue-grey border-right-lighten-5 justify-content-between">
+                                  
+                                  <div class="stats-amount mr-3">
+                                    <h3 class="heading-text text-bold-600">140 kg</h3>
+                                    <p class="sub-heading">Squat</p>
+                                  </div>
+                                  <span class="card-icon primary d-flex">
+                                      <img class="stat-icon" src="./assets/img/statistics/Squat.png" width="100"/>
+                                  </span>
+                                  
+                                  <!-- <span class="inc-dec-percentage">
+                                    <small class="danger"><i class="fa fa-long-arrow-down"></i> 2.0%</small>
+                                  </span> -->
+                                </div>
+                              </div>
+                              <div id="stat-2" class="col-lg-6 col-xl-3 col-sm-6 col-12">
+                                <div class="d-flex align-items-start border-right-blue-grey border-right-lighten-5 justify-content-between">
+                                  
+                                  <div class="stats-amount mr-3">
+                                    <h3 class="heading-text text-bold-600">150 kg</h3>
+                                    <p class="sub-heading">Deadlift</p>
+                                  </div>
+                                  <span class="card-icon primary d-flex">
+                                      <img class="stat-icon"  src="./assets/img/statistics/Deadlift.png" width="100"/>
+                                  </span>
+                                  
+                                  <!-- <span class="inc-dec-percentage">
+                                    <small class="success"><i class="fa fa-long-arrow-up"></i> 10.0%</small>
+                                  </span> -->
+                                </div>
+                              </div>
+                              <div id="stat-3" class="col-lg-6 col-xl-3 col-sm-6 col-12">
+                                <div class="d-flex align-items-start border-right-blue-grey border-right-lighten-5 justify-content-between">
+                                  
+                                  <div class="stats-amount mr-3">
+                                    <h3 class="heading-text text-bold-600">54 km</h3>
+                                    <p class="sub-heading">Longest Continuous Run</p>
+                                  </div>
+                                  <span class="card-icon primary d-flex stat-icon">
+                                      <img src="./assets/img/statistics/Run.png" width="100"/>
+                                  </span>
+                                  <!-- <span class="inc-dec-percentage">
+                                    <small class="danger"><i class="fa fa-long-arrow-down"></i> 13.6%</small>
+                                  </span> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="toggleButton" class="btn btn-primary mb-3 mt-3">Imperial</button>
+                    
+              </div>
+           </div>
+        </section>
+      </div>
+    </div>
   </section>
+
+   
 
   <!-- Projects -->
   <section class="page-section portfolio scroll-target" id="portfolio">
@@ -135,110 +235,18 @@
 
   </section>
 
-  <!-- Stats -->
-  <section class="page-section portfolio" id="statistics">
-    <div class="container">
-        <!-- Statistic Section Heading-->
-        <h2 class="page-section-heading text-center text-secondary mb-0">Statistics</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Statistics -->
-        <div class="row grouped-multiple-statistics-card">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div id="stat-0" class="col-lg-6 col-xl-3 col-sm-6 col-12">
-                        <div class="d-flex align-items-start mb-sm-1 mb-xl-0 border-right-blue-grey border-right-lighten-5 justify-content-between">
-                            
-                            <div class="stats-amount mr-3">
-                              <h3 class="heading-text text-bold-600">125 kg</h3>
-                              <p class="sub-heading">Bench Press</p>
-                            </div>
-                            <span class="card-icon primary d-flex">
-                                <img class="stat-icon" src="./assets/img/statistics/Bench.png" width="100"/>
-                            </span>
-                            
-                            <!-- <span class="inc-dec-percentage">
-                              <small class="success"><i class="fa fa-long-arrow-up"></i> 5.2%</small>
-                            </span> -->
-                          </div>
-                    </div>
-                    <div id="stat-1" class="col-lg-6 col-xl-3 col-sm-6 col-12">
-                      <div class="d-flex align-items-start mb-sm-1 mb-xl-0 border-right-blue-grey border-right-lighten-5 justify-content-between">
-                        
-                        <div class="stats-amount mr-3">
-                          <h3 class="heading-text text-bold-600">140 kg</h3>
-                          <p class="sub-heading">Squat</p>
-                        </div>
-                        <span class="card-icon primary d-flex">
-                            <img class="stat-icon" src="./assets/img/statistics/Squat.png" width="100"/>
-                        </span>
-                        
-                        <!-- <span class="inc-dec-percentage">
-                          <small class="danger"><i class="fa fa-long-arrow-down"></i> 2.0%</small>
-                        </span> -->
-                      </div>
-                    </div>
-                    <div id="stat-2" class="col-lg-6 col-xl-3 col-sm-6 col-12">
-                      <div class="d-flex align-items-start border-right-blue-grey border-right-lighten-5 justify-content-between">
-                        
-                        <div class="stats-amount mr-3">
-                          <h3 class="heading-text text-bold-600">150 kg</h3>
-                          <p class="sub-heading">Deadlift</p>
-                        </div>
-                        <span class="card-icon primary d-flex">
-                            <img class="stat-icon"  src="./assets/img/statistics/Deadlift.png" width="100"/>
-                        </span>
-                        
-                        <!-- <span class="inc-dec-percentage">
-                          <small class="success"><i class="fa fa-long-arrow-up"></i> 10.0%</small>
-                        </span> -->
-                      </div>
-                    </div>
-                    <div id="stat-3" class="col-lg-6 col-xl-3 col-sm-6 col-12">
-                      <div class="d-flex align-items-start border-right-blue-grey border-right-lighten-5 justify-content-between">
-                        
-                        <div class="stats-amount mr-3">
-                          <h3 class="heading-text text-bold-600">54 km</h3>
-                          <p class="sub-heading">Longest Continuous Run</p>
-                        </div>
-                        <span class="card-icon primary d-flex stat-icon">
-                            <img src="./assets/img/statistics/Run.png" width="100"/>
-                        </span>
-                        <!-- <span class="inc-dec-percentage">
-                          <small class="danger"><i class="fa fa-long-arrow-down"></i> 13.6%</small>
-                        </span> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button id="toggleButton" class="btn btn-primary mb-3 mt-3">Imperial</button>
-          
-    </div>
+ 
 
-        
-    </div>
-  </section>
-
-  <!-- About Section-->
-  <section class="page-section bg-primary text-white mb-0 gradient-background" id="about">
+  <!-- Contact Section-->
+  <section class="page-section text-white mb-0 gradient-background" id="contact">
     <div class="container">
-        <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-white">About</h2>
+        <!-- Footer-->
+        <h2 class="page-section-heading text-center text-white">Contact</h2>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
         </div>
-        <!-- About Section Content-->
-        <div class="row">
-            <div class="col-lg-12"><p class="lead text-justify">I am a Computer Science undergrad at Carnegie Mellon University, hailing from sunny Singapore! When I'm not nose-deep in code, you can find me in the gym, building things, watching movies. My newest obsession is building my own custom keyboard, right from printing the PCB. My next project hopefully would be to build my own cargo-bike, and learning how to weld in the process.</p></div>
-        </div>
+        
         <div class="contact-icons d-flex justify-content-center">
             <a href="" id="copyEmailButton" title="Copy Email"><i class="social-icon fas fa-envelope"></i></a>
             <a href="https://github.com/Shermern" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="social-icon fab fa-github"></i></a>
@@ -282,6 +290,38 @@
       </li>
 
       <li class="nav-item">
+        <a href="#about" class="nav-link">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="user"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x"
+          >
+
+          <g class="fa-group">
+            <path
+              fill="currentColor"
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"            
+              class="fa-secondary"
+              ></path>
+            
+            <path
+              fill="currentColor"
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"            
+              class="fa-primary">
+            </path>
+          </g>
+          
+          </svg>
+          <span class="link-text">About</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
         <a href="#portfolio" class="nav-link">
           <svg
             aria-hidden="true"
@@ -308,36 +348,8 @@
         </a>
       </li>
 
-
       <li class="nav-item">
-        <a href="#statistics" class="nav-link">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fad"
-            data-icon="space-station-moon-alt"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x"
-          >
-            <g class="fa-group">
-              <path
-                fill="currentColor"
-                d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"                class="fa-secondary"
-              ></path>
-              <path
-                fill="currentColor"
-                d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"                class="fa-primary"
-              ></path>
-            </g>
-          </svg>
-          <span class="link-text">Statistics</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#about" class="nav-link">
+        <a href="#contact" class="nav-link">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -359,11 +371,42 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">About</span>
+          <span class="link-text">Contact</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="./assets/Resume 030823.pdf" class="nav-link" target="_blank">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="contact"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            class="svg-inline--fa fa-contact fa-w-18 fa-9x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"                
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"                
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <span class="link-text">Resume</span>
         </a>
       </li>
     </ul>
   </nav>
+
+
 
   <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -704,11 +747,23 @@
       <script src="js/units.js"></script>
       <!-- Typejs -->
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+      <!-- Collapsible -->
+      <script src="js/collapsible.js"></script>
       <script>
         var typed = new Typed('#header-typejs', {
-          strings: ["Shermern Ang"],
-          typeSpeed: 75
+          strings: ["Shermern"],
+          typeSpeed: 100,
+          onComplete: function(self) { 
+            self.cursor.remove()
+          }
+        });
+
+        var typed3 = new Typed('#typed3', {
+          strings: ["Computer Science Student.^1000", "Engineer.^1000", "Maker.^1000"],
+          typeSpeed: 30,
+          backSpeed: 20,
+          smartBackspace: true, // this is a default
+          loop: true
         });
       </script>
 
